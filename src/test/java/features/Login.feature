@@ -2,7 +2,9 @@ Feature: Application Login
 
 Scenario: Home Page Default login
  
-Given User is on Net Banking Landing page
-When User login to application with username and password
-Then Home Page is populated 
-And Cards are displayed 
+Given Initialize the browser with chrome 
+And Navigate to Amazon Site
+When User clicks on SignIn
+And Enter Username and click on Continue
+And Enter Password and click on SignIn Button
+Then Navigate to Login screen 
